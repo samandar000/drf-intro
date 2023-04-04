@@ -10,4 +10,10 @@ def hi(request: Request) -> Response:
     
     name = params.get('name', '')
 
-    print(f'hi, {name}')
+    return Response(f'hi, {name}')
+
+
+@api_view
+def addition(request: Request) -> Response:
+    '''add two number'''
+    pass
